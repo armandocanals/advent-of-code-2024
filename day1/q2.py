@@ -3,7 +3,7 @@ col1, col2 = [], []
 for i in f:
     line = i.split(" ")
     col1.append(line[0])
-    col2.append(line[-1].replace("\n", ""))
+    col2.append(line[-1].rstrip())
 
 res = []
 for i in col1:
